@@ -12,7 +12,6 @@ var selectedArray = [];
 var password;
 
 
-// Asks for the length of password 
 function generatePassword() {
   // Length of the password is chosen 
   var password = parseInt(window.prompt("How long would you like for your password to be ? It must be betweeen 8-28 character.");
@@ -26,22 +25,26 @@ function generatePassword() {
   }
 
   //character types to include in password
-
-
-
-
-
-
-
- // if no number is inserted this alert will show
-  // if (isNaN(passwordl)) { window.alert("You must enter a valid number"); return null;
- } 
-
-
- 
-
-
+var confirmlower = window.confirm("This password will contain lowercase letters.");
+  if(confirmlower) {
+    selectedArray = selectedArray.concat(lowercase);
+  }
+var confirmupper = window.confirm("This password will contain uppercase letters.");
+  if(confirmupper) {
+    selectedArray = selectedArray.concat(uppercase);
+  }
+var confirmnumber = window.confirm("This password will contain numbers.");
+  if (confirmnumber) {
+    selectedArray = selectedArray.concat(number);
+  }
+var confirmspecialcharacter = window.confirm("This password will contain a special character.");
+  if(confirmspecialcharacter) {
+    selectedArray = selectedArray.concat(specialcharacter);
+  }
+  randomcharacters(password);
+ };
    
+  
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
