@@ -46,7 +46,10 @@ var confirmspecialcharacters = window.confirm("This password will contain  speci
   if(confirmspecialcharacters) {
     selectedArray = selectedArray.concat(specialcharacters);
   }
- };
+ return selectedArray;
+};
+
+ 
    
 for (var i = 0; i < password; i++) {
   password = selectedArray [Math.floor(Math.random() * selectedArray.length)]
