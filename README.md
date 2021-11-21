@@ -16,6 +16,7 @@ The password generator is an application that the user can use to generate a ran
 ![image](https://user-images.githubusercontent.com/92446866/142770003-e2ae64fc-e65a-4941-a12c-00c9e2870be0.png)
 ![image](https://user-images.githubusercontent.com/92446866/142770032-fdb639b7-2cb3-4522-a445-d8910f2a7aa5.png)
 ![image](https://user-images.githubusercontent.com/92446866/142770061-b4554f83-73c3-4206-8171-577612251458.png)
+![image](https://user-images.githubusercontent.com/92446866/142770085-30502fb5-181c-40cd-ae8f-687c46e72141.png)
 
 
 ### This is what the password will look like once the password has been genrated on the screen
