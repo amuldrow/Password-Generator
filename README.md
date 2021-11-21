@@ -26,4 +26,4 @@ The password generator is an application that the user can use to generate a ran
 
 ## This is the link to my deployed application URl :
 
-## This is the link to my Github repository :
+## This is the link to my Github repository : https://github.com/amuldrow/PasswordGenerator.git
