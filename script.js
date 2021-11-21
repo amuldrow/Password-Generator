@@ -9,7 +9,7 @@ var number = ["0123456789"]
 var specialcharacters = ["!@#$%&*"]
 
 var selectedcharacters = [];
-var passwordcharacters = ;
+var passwordcharacters = "" ;
 
 function generatePassword() {
  
@@ -47,9 +47,10 @@ var confirmspecialcharacters = window.confirm("This password will contain  speci
     selectedcharacters = selectedcharacters.concat(specialcharacters);
   }
 
+  randomcharacters (passwordcharacters);
+
  return selectedcharacters;
 
- randomcharacters(passwordcharacters);
 };
 
  function randomcharacters(length) {  
