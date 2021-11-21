@@ -9,6 +9,8 @@ The password generator is an application that the user can use to generate a ran
 
 
 ### Prompt that appears asking for length of password 
+![image](https://user-images.githubusercontent.com/92446866/142769989-29bf14d4-2268-4538-a1cb-dbe6c74124c6.png)
+
 
 ### Alert that shows to confirm characters that will be included in the password 
 
