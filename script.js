@@ -14,10 +14,11 @@ var password;
 
 function generatePassword() {
   // Length of the password is chosen 
-  var password = parseInt(window.prompt("How long would you like for your password to be ? It must be betweeen 8-28 character.");
+  var password = parseInt(window.prompt("How long would you like for your password to be ? It must be betweeen 8-28 character."));
     if(password < 8 || password > 128) {
     window.alert("Password must be between 8 and 128 characters.");
     return null;
+    
   }
     else if(isNaN(password)) {
     window.alert("You must enter a valid number");
