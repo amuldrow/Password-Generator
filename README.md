@@ -5,6 +5,7 @@
 The password generator is an application that the user can use to generate a random password based on the selected criteria. This app will run in the browser and will feature HTML and CSS but will be powered by JavaScript code that was created.
 
 ### Password Generator HTML page 
+![image](https://user-images.githubusercontent.com/92446866/142769688-0710ea74-0920-496f-8599-7fb21cbc30a1.png)
 
 
 ### Prompt that appears asking for length of password 
