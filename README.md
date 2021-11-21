@@ -14,6 +14,7 @@ The password generator is an application that the user can use to generate a ran
 
 ### Alert that shows to confirm characters that will be included in the password 
 ![image](https://user-images.githubusercontent.com/92446866/142770003-e2ae64fc-e65a-4941-a12c-00c9e2870be0.png)
+![image](https://user-images.githubusercontent.com/92446866/142770032-fdb639b7-2cb3-4522-a445-d8910f2a7aa5.png)
 
 
 ### This is what the password will look like once the password has been genrated on the screen
