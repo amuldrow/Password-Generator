@@ -7,45 +7,51 @@ var lowercase = ["abcdefghijklmnopqrstuvwxyz"]
 var uppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
 var number = ["0123456789"]
 var specialcharacters = ["!@#$%&*"]
+
 var selectedArray = [];
-
-var password;
-
+var password = "" ;
 
 function generatePassword() {
+ 
+ 
   // Length of the password is chosen 
-  var password = parseInt(window.prompt("How long would you like for your password to be ? It must be betweeen 8-28 character."));
-    if(password < 8 || password > 128) {
-    window.alert("Password must be between 8 and 128 characters.");
+  var passwordlength = parseInt(window.prompt("How long would you like for your password to be ? It must be betweeen 8-28 character."));
+    if(passwordlength < 8 || passwordlength > 128) {
+    alert("Password must be between 8 and 128 characters.");
     return null;
     
   }
-    else if(isNaN(password)) {
-    window.alert("You must enter a valid number");
+    else if(isNaN(passwordlength)) {
+    alert("You must enter a valid number");
     return null;
   }
 
-  //character types to include in password
+  //confirm for lowercase "Ok or cancel"
 var confirmlower = window.confirm("This password will contain lowercase letters.");
   if(confirmlower) {
-    selectedArray = selectedArray.concat(lowercase);
+    selectedArray = selectedArray. concat(lowercase);
   }
+  // confirm for uppercase "Ok or cancel"
 var confirmupper = window.confirm("This password will contain uppercase letters.");
   if(confirmupper) {
     selectedArray = selectedArray.concat(uppercase);
   }
+  // confirm for numbers "Ok or cancel"
 var confirmnumber = window.confirm("This password will contain numbers.");
   if (confirmnumber) {
     selectedArray = selectedArray.concat(number);
   }
-var confirmspecialcharacter = window.confirm("This password will contain a special character.");
-  if(confirmspecialcharacter) {
-    selectedArray = selectedArray.concat(specialcharacter);
+ // confirm for special characters "Ok or cancel"
+var confirmspecialcharacters = window.confirm("This password will contain  special characters.");
+  if(confirmspecialcharacters) {
+    selectedArray = selectedArray.concat(specialcharacters);
   }
-  randomcharacters(password);
  };
    
-  
+for (var i = 0; i < password; i++) {
+  password = selectedArray [Math.floor(Math.random() * selectedArray.length)]
+}
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
