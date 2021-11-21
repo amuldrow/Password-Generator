@@ -8,8 +8,8 @@ var uppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
 var number = ["0123456789"]
 var specialcharacters = ["!@#$%&*"]
 
-var selectedArray = [];
-var password = "" ;
+var selectedcharacters = [];
+var passwordcharacters = ;
 
 function generatePassword() {
  
@@ -29,31 +29,35 @@ function generatePassword() {
   //confirm for lowercase "Ok or cancel"
 var confirmlower = window.confirm("This password will contain lowercase letters.");
   if(confirmlower) {
-    selectedArray = selectedArray. concat(lowercase);
+    selectedcharacters = selectedcharacters. concat(lowercase);
   }
   // confirm for uppercase "Ok or cancel"
 var confirmupper = window.confirm("This password will contain uppercase letters.");
   if(confirmupper) {
-    selectedArray = selectedArray.concat(uppercase);
+    selectedcharacters = selectedcharacters.concat(uppercase);
   }
   // confirm for numbers "Ok or cancel"
 var confirmnumber = window.confirm("This password will contain numbers.");
   if (confirmnumber) {
-    selectedArray = selectedArray.concat(number);
+    selectedcharacters = selectedcharacters.concat(number);
   }
  // confirm for special characters "Ok or cancel"
 var confirmspecialcharacters = window.confirm("This password will contain  special characters.");
   if(confirmspecialcharacters) {
-    selectedArray = selectedArray.concat(specialcharacters);
+    selectedcharacters = selectedcharacters.concat(specialcharacters);
   }
- return selectedArray;
+
+ return selectedcharacters;
+
+ randomcharacters(passwordcharacters);
 };
 
- 
-   
-for (var i = 0; i < password; i++) {
-  password = selectedArray [Math.floor(Math.random() * selectedArray.length)]
-}
+ function randomcharacters(length) {  
+  for (var i = 0; i < length; i++) {
+  indexcharacters = selectedcharacters [Math.floor(Math.random() * selectedcharacters.length)]
+  }
+};
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
