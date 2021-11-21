@@ -3,16 +3,17 @@ var generateBtn = document.querySelector("#generate");
 
 // Arrays for lowercase , uppercase , numbers and characters
 
-var lowercase = ["abcdefghijklmnopqrstuvwxyz"]
-var uppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
-var number = ["0123456789"]
-var specialcharacters = ["!@#$%&*"]
+var lowercase = "abcdefghijklmnopqrstuvwxyz"
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var number = "0123456789"
+var specialcharacters = "!@#$%&*"
 
-var selectedcharacters = [];
-var passwordcharacters = "" ;
+
 
 function generatePassword() {
- 
+
+var selectedcharacters = "";
+var passwordcharacters = "" ; 
  
   // Length of the password is chosen 
   var passwordlength = parseInt(window.prompt("How long would you like for your password to be ? It must be betweeen 8-28 character."));
@@ -25,31 +26,32 @@ function generatePassword() {
     alert("You must enter a valid number");
     return null;
   }
+  console.log(passwordlength)
 
   //confirm for lowercase "Ok or cancel"
-var confirmlower = window.confirm("This password will contain lowercase letters.");
-  if(confirmlower) {
+var lowercase = window.confirm("This password will contain lowercase letters.");
+  if(lowercase) {
     selectedcharacters = selectedcharacters. concat(lowercase);
   }
   // confirm for uppercase "Ok or cancel"
-var confirmupper = window.confirm("This password will contain uppercase letters.");
-  if(confirmupper) {
+var uppercase = window.confirm("This password will contain uppercase letters.");
+  if(uppercase) {
     selectedcharacters = selectedcharacters.concat(uppercase);
   }
   // confirm for numbers "Ok or cancel"
-var confirmnumber = window.confirm("This password will contain numbers.");
-  if (confirmnumber) {
+var number = window.confirm("This password will contain numbers.");
+  if (number) {
     selectedcharacters = selectedcharacters.concat(number);
   }
  // confirm for special characters "Ok or cancel"
-var confirmspecialcharacters = window.confirm("This password will contain  special characters.");
-  if(confirmspecialcharacters) {
+var specialcharacters = window.confirm("This password will contain  special characters.");
+  if(specialcharacters) {
     selectedcharacters = selectedcharacters.concat(specialcharacters);
   }
 
   randomcharacters (passwordcharacters);
 
- return selectedcharacters;
+   return selectedcharacters;
 
 };
 
